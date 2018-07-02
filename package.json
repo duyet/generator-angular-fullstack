@@ -31,7 +31,9 @@
     "url": "git://github.com/angular-fullstack/generator-angular-fullstack.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-core": "^6.7.0",
@@ -44,8 +46,9 @@
     "insight": "~0.7.0",
     "lodash": "^4.6.1",
     "underscore.string": "^3.1.1",
-    "yeoman-generator": "^0.22.5",
-    "yeoman-welcome": "^1.0.1"
+    "yeoman-generator": "^0.24.1",
+    "yeoman-welcome": "^1.0.1",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
@@ -70,5 +73,6 @@
     "node": "^4.4.0",
     "npm": "^2.14.20"
   },
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "snyk": true
 }
